@@ -22,3 +22,5 @@ The branch coverage is a solution where every branch of a statement is evaluated
 But, at this time, we can't do a branch coverage in go. see [cover.go](https://golang.org/src/cmd/cover/cover.go#L142) and a [closed issue](https://github.com/golang/go/issues/28888).
 
 So we only need to be meticulous when we write test and when other review them.
+
+[Next step](/step3/)
