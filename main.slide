@@ -1,0 +1,45 @@
+Code quality in go
+Tool around testing
+9 Feb 2019
+
+Boris Sabatier
+DevOps at Stormshield    
+boris-todo@sabatier.io    
+https://www.github.com/BorisSabatier/foobar    
+https://en.wikipedia.org/wiki/Code_coverage
+https://en.wikipedia.org/wiki/Mutation_testing
+https://github.com/zimmski/go-mutesting
+
+* Test coverage
+_Test_coverage_is_a_measure_used_to_describe_the_degree_to_which_the_source_code_of_a_program_is_executed_when_a_particular_test_suite_runs_._ by [[https://en.wikipedia.org/wiki/Code_coverage][Wikipedia]]
+
+* Branch coverage
+_Has_each_branch_of_each_control_structure_been_executed_?_ by [[https://en.wikipedia.org/wiki/Code_coverage][Wikipedia]]
+
+* Mutation testing
+_Mutation_testing_is_used_to_design_new_software_tests_and_evaluate_the_quality_of_existing_software_tests._ by [[https://en.wikipedia.org/wiki/Mutation_testing][Wikipedia]]
+
+* Testception
+So mutation testing test the test.
+.image https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif _ 300
+
+* How do it work ?
+- A *mutation* is an alteration of the code source.
+- Mutation testing do a mutation and check if test detect/kill it.
+- Your goal when you do mutation testing is to kill every mutants !
+
+* What kind of mutation ?
+- Statement deletion
+- Statement duplication
+- Replacement of boolean subexpressions
+- Replacement of arithmetic operations
+- Replacement of boolean relations
+- Replacement of variables with others
+
+* Let's play
+
+* Mutation testing and Golang ?
+A tool named [[go-mutesting][https://github.com/zimmski/go-mutesting]]
+
+- Not all mutations implemented
+- A bit litle bit slow. 5 min for mutate gorilla
