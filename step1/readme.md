@@ -23,3 +23,5 @@ go tool cover -html=c.out -o coverage.html
 The coverage.html will show that the line `return false` of the function canBuyAlcool isn't covered.
 
 => So we can add a new test to cover this case.
+
+[Next step](/step2/)
